@@ -66,6 +66,6 @@ task buildproject(dependsOn: [clean, rebuild]) << {
 }
 
 
-task server(dependsOn: [build, jettyRun]) {
+task server(dependsOn: [buildproject, jettyRun]) {
 	println 'Launching Server..'
 }
